@@ -416,7 +416,7 @@ xsd:date rdf:type rdfs:Datatype .
                                             :EventoRitual ;
                                    :ocurreEnLugar :Mahuayani ,
                                                   :SantuarioQoylluriti ;
-                                   :tieneOrdenEvento 4 ;
+                                   :tieneOrdenEvento 1 ;
                                    rdfs:comment "Ascenso desde Mahuayani hasta el santuario del Señor de Qoyllu Rit'i."@es ;
                                    rdfs:label "Caminata Mahuayani-Santuario (2025)"@es .
 
@@ -426,7 +426,7 @@ xsd:date rdf:type rdfs:Datatype .
                               :EventoRitual ;
                      :ocurreEnLugar :QespiCruz ;
                      :realizadoPor :NacionPaucartambo ;
-                     :tieneOrdenEvento 4 ;
+                     :tieneOrdenEvento 1 ;
                      rdfs:comment "A medianoche, toda la Nación canta la 'Canción de Despedida de los Qapaq Qollas' en Q'espi Cruz."@es ;
                      rdfs:label "Canto en Q'espi Cruz (2025)"@es .
 
@@ -503,7 +503,7 @@ xsd:date rdf:type rdfs:Datatype .
                                                      :EventoRitual ;
                                             :ocurreEnLugar :SantuarioQoylluriti ;
                                             :realizadoPor :NacionPaucartambo ;
-                                            :tieneOrdenEvento 1 ;
+                                            :tieneOrdenEvento 4 ;
                                             rdfs:comment "Actos de veneración al Señor de Qoyllur Rit'i dentro del templo principal del santuario."@es ;
                                             rdfs:label "Veneración en el templo del santuario (2025)"@es .
 
@@ -538,6 +538,7 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://example.org/festividades#ComidaCcatcca_2025
 :ComidaCcatcca_2025 rdf:type owl:NamedIndividual ,
                              :EventoRitual ;
+                    :antesDe :PasoCasaPrioste ;
                     :ocurreEnLugar :PlazaCcatcca ;
                     :realizadoPor :Ukumaris_Paucartambo_2025 ;
                     :tieneOrdenEvento 6 ;
@@ -555,8 +556,7 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://example.org/festividades#DejaImagenEnCapillaTayancani_2025
 :DejaImagenEnCapillaTayancani_2025 rdf:type owl:NamedIndividual ,
                                             :EventoRitual ;
-                                   :defineMarcoTemporal :DejaImagenEnCapillaTayancani_2025 ;
-                                   :tieneOrdenEvento 2 ;
+                                   :tieneOrdenEvento 3 ;
                                    rdfs:comment "Depósito de la imagen en la capilla de Tayancani"@es ;
                                    rdfs:label "Dejar imagen en capilla de Tayancani (2025)"@es .
 
@@ -566,7 +566,7 @@ xsd:date rdf:type rdfs:Datatype .
                                    :EventoRitual ;
                           :ocurreEnLugar :CeldaUkukusPaucartambo ;
                           :realizadoPor :Ukumaris_Paucartambo_2025 ;
-                          :tieneOrdenEvento 5 ;
+                          :tieneOrdenEvento 6 ;
                           rdfs:comment "Descanso, comida y preparación en la celda de los Ukukus en el bofedal del santuario, antes de la subida nocturna al glaciar."@es ;
                           rdfs:label "Descanso en celda de Ukukus (2025)"@es .
 
@@ -576,7 +576,7 @@ xsd:date rdf:type rdfs:Datatype .
                                   :EventoRitual ;
                          :ocurreEnLugar :Yanaqancha ;
                          :realizadoPor :NacionPaucartambo ;
-                         :tieneOrdenEvento 3 ;
+                         :tieneOrdenEvento 4 ;
                          rdfs:comment "Descanso prolongado de 4 horas en Yanaqancha. Aquí se deja la imagen del Señor de Tayankani y la Nación se viste nuevamente."@es ;
                          rdfs:label "Descanso en Yanaqancha (2025)"@es .
 
@@ -595,8 +595,7 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://example.org/festividades#Dia2_DomingoPartida
 :Dia2_DomingoPartida rdf:type owl:NamedIndividual ,
                               :EventoRitual ;
-                     :defineMarcoTemporal :Caminata_Mahuayani_Santuario_2025 ,
-                                          :ComidaCcatcca_2025 ,
+                     :defineMarcoTemporal :ComidaCcatcca_2025 ,
                                           :MisaInicial_Paucartambo_2025 ,
                                           :ParadaHuancarani_2025 ,
                                           :PasoCasaPrioste ,
@@ -613,7 +612,8 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://example.org/festividades#Dia3_LunesAscenso
 :Dia3_LunesAscenso rdf:type owl:NamedIndividual ,
                             :EventoRitual ;
-                   :defineMarcoTemporal :CeremoniaVeneracion_Templo_Qoylluriti_2025 ,
+                   :defineMarcoTemporal :Caminata_Mahuayani_Santuario_2025 ,
+                                        :CeremoniaVeneracion_Templo_Qoylluriti_2025 ,
                                         :DescansoCeldaUkukus_2025 ,
                                         :MisaUkukus_2025 ,
                                         :Pachakunapata ,
@@ -630,7 +630,6 @@ xsd:date rdf:type rdfs:Datatype .
 :Dia4_MartesDescensoYLomada rdf:type owl:NamedIndividual ,
                                      :EventoRitual ;
                             :defineMarcoTemporal :BajadaColquePunku_2025 ,
-                                                 :CantoQespiCruz_2025 ,
                                                  :DescansoYanaqancha_2025 ,
                                                  :Lomada_2025 ,
                                                  :RitualDespedida_Yanaqocha_2025 ,
@@ -663,7 +662,7 @@ xsd:date rdf:type rdfs:Datatype .
                 :ocurreEnLugar :Escalerachayoq ;
                 :realizadoPor :NacionPaucartambo ;
                 :tieneNombreLocal "Escalerachayoq" ;
-                :tieneOrdenEvento 6 ;
+                :tieneOrdenEvento 2 ;
                 rdfs:comment "Dualidad evento-lugar: tramo de la Lomada que consiste en una bajada de piedras entre las 3 y 4 de la madrugada, antes de llegar al Inti Alabado."@es ;
                 rdfs:label "Escalerachayoq"@es ;
                 geo:lat -13.5650 ;
@@ -773,7 +772,7 @@ xsd:date rdf:type rdfs:Datatype .
              :sigueRuta :Lomada_2025 ;
              :tieneNombreLocal "lomada" ,
                                "loman pureq" ;
-             :tieneOrdenEvento 2 ;
+             :tieneOrdenEvento 5 ;
              rdfs:comment "Dualidad evento-trayecto: caminata ritual de 24 horas que es el camino físico con hitos rituales. Como evento: acción ritual. Como lugar: ruta con puntos específicos (Machu Cruz, Yanaqocha, Q'espi Cruz, etc.)."@es ;
              rdfs:label "Lomada / Loman Pureq (2025)"@es .
 
@@ -908,7 +907,8 @@ xsd:date rdf:type rdfs:Datatype .
 ###  http://example.org/festividades#PasoCasaPrioste
 :PasoCasaPrioste rdf:type owl:NamedIndividual ,
                           :EventoRitual ;
-                 :tieneOrdenEvento 3 ;
+                 :antesDe :ViajeVehicular_Paucartambo_Mahuayani_2025 ;
+                 :tieneOrdenEvento 7 ;
                  rdfs:comment "Visita y ritual en la casa del prioste durante el camino entre Paucartambo y Mahuayani."@es ;
                  rdfs:label "Paso por la casa del prioste (2025)"@es .
 
@@ -957,7 +957,7 @@ xsd:date rdf:type rdfs:Datatype .
                                         :EventoRitual ;
                                :ocurreEnLugar :PlazaOcongate ;
                                :realizadoPor :NacionPaucartambo ;
-                               :tieneOrdenEvento 4 ;
+                               :tieneOrdenEvento 5 ;
                                rdfs:comment "Procesión final en Ocongate que marca el término oficial de la festividad para la Nación Paucartambo."@es ;
                                rdfs:label "Procesión de entrada a Ocongate (2025)"@es .
 
@@ -967,7 +967,7 @@ xsd:date rdf:type rdfs:Datatype .
                                     :EventoRitual ;
                            :ocurreEnLugar :Mamachapata ;
                            :realizadoPor :NacionPaucartambo ;
-                           :tieneOrdenEvento 4 ;
+                           :tieneOrdenEvento 5 ;
                            rdfs:comment "Procesión con la imagen del Señor de Tayankani hacia el área de Mamachapata dentro del santuario. La Nación Paucartambo tiene el derecho histórico de ser los primeros en sacar esta imagen."@es ;
                            rdfs:label "Procesión a Mamachapata (2025)"@es .
 
@@ -995,7 +995,7 @@ xsd:date rdf:type rdfs:Datatype .
                                          :EventoRitual ;
                                 :ocurreEnLugar :Yanaqocha ;
                                 :realizadoPor :NacionPaucartambo ;
-                                :tieneOrdenEvento 2 ;
+                                :tieneOrdenEvento 3 ;
                                 rdfs:comment "Rituales de despedida entre miembros de la Nación en la Laguna Yanaqocha, corriendo y abrazándose."@es ;
                                 rdfs:label "Ritual de despedida en Yanaqocha (2025)"@es .
 
@@ -1015,7 +1015,7 @@ xsd:date rdf:type rdfs:Datatype .
                                :EventoRitual ;
                       :ocurreEnLugar :MachuCruz ;
                       :realizadoPor :NacionPaucartambo ;
-                      :tieneOrdenEvento 1 ;
+                      :tieneOrdenEvento 2 ;
                       rdfs:comment "Pausa ritual a poco más de una hora del santuario para comer maíz y queso, en acto simbólico de despedida del espacio sagrado."@es ;
                       rdfs:label "Ritual en Machu Cruz (2025)"@es .
 
@@ -1037,7 +1037,7 @@ xsd:date rdf:type rdfs:Datatype .
                                         :EventoRitual ;
                                :antesDe :RitualVestimentaDanzantes_2025 ;
                                :ocurreEnLugar :CementerioPaucartambo ;
-                               :tieneOrdenEvento 1 ;
+                               :tieneOrdenEvento 2 ;
                                rdfs:comment "Romería y anuncio público antes de la partida"@es ;
                                rdfs:label "Romería en Paucartambo (2025)"@es .
 
@@ -1093,7 +1093,7 @@ xsd:date rdf:type rdfs:Datatype .
 :TrasladoImagenSenorOcongate_Tayancani_2025 rdf:type owl:NamedIndividual ,
                                                      :EventoRitual ;
                                             :ocurreEnLugar :Ocongate ;
-                                            :tieneOrdenEvento 3 ;
+                                            :tieneOrdenEvento 4 ;
                                             rdfs:comment "Procesión con la imagen desde Tayancani hacia Ocongate"@es ;
                                             rdfs:label "Traslado de la imagen a Ocongate (2025)"@es .
 
@@ -1122,7 +1122,7 @@ xsd:date rdf:type rdfs:Datatype .
                                                     :Ocongate ;
                                            :realizadoPor :Ukumaris_Paucartambo_2025 ;
                                            :sigueRuta :RutaPaucartamboMahuayani ;
-                                           :tieneOrdenEvento 7 ;
+                                           :tieneOrdenEvento 8 ;
                                            rdfs:comment "Dualidad evento-lugar: viaje ritual en vehículo desde Paucartambo hasta Mahuayani que sigue una ruta física específica con paradas rituales."@es ;
                                            rdfs:label "Viaje vehicular a Mahuayani (2025)"@es .
 
